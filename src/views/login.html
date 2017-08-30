@@ -1,0 +1,34 @@
+<div id="login" class="container">
+    <div class="login col-sm-4 col-sm-push-4">
+        <form method="post" ng-controller="loginController" name="myForm" novalidate>
+            <h3 class="text-center">登录</h3>
+            <div class="form-group">
+                <input type="text" placeholder="请输入您的手机号码" class="form-control" name="phone" ng-model="phone" required>
+                <div class="tips">
+                    <span ng-show="myForm.phone.$error.required&&myForm.phone.$dirty">帐号不能为空</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="password" placeholder="请输入密码" class="form-control" name="psd" ng-model="psd" required>
+                <div class="tips">
+                    <span ng-show="myForm.psd.$error.required&&myForm.psd.$dirty">密码不能为空</span>
+                </div>
+            </div>
+            <button class="btn btn-block btn-success" ng-click="login()" ng-disabled="myForm.$invalid">登录</button>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">记住我
+                </label>
+            </div>
+        </form>
+        <hr class="login-method-hr">
+        <div class="login-method">
+            <h5>第三方登录</h5>
+            <a href="#" class="fa fa-weixin"></a>
+            <a href="#" class="fa fa-qq"></a>
+            <a href="#" class="fa fa-weibo"></a>
+        </div>
+        <h6>新用户？<a ui-sref="register">立即注册</a></h6>
+    </div>
+</div>

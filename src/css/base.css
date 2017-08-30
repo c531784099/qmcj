@@ -1,0 +1,44 @@
+/* CSS Document */
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset, input ,nav,header,aside,article,section,figure,figcaption{ padding: 0; margin: 0;}
+
+ul, li,ol { list-style: none outside;}
+fieldset, img { border:0 none; vertical-align: middle;}
+table{border-collapse: collapse;}
+i,em ,b{
+  font-style: normal;
+}
+input,button,select,textarea{ outline:none;}
+textarea{
+	resize:none;}
+:focus{
+	outline:none}
+html{ font-size:62.5%; }
+body { "Microsoft Yahei",arial; }
+a { 
+  color:#333; 
+  text-decoration: none;
+}
+a:link, a:visited, a:active { text-decoration: none;  color:#333;}
+a:hover { color: #D93600; text-decoration: underline;}
+
+.clearfix:after { clear: both; content: "."; display: block; height: 0; line-height: 0; visibility: hidden;}
+.clearfix {zoo:1;}
+.fl{float:left;}
+.fr{float:right;}
+.w{
+	width:1200px; margin:0 auto;}
+@font-face {
+  font-family: 'iconfont';  /* project id 227716 */
+  src: url('http://at.alicdn.com/t/font_9parxfpr06893sor.eot');
+  src: url('http://at.alicdn.com/t/font_9parxfpr06893sor.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_9parxfpr06893sor.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_9parxfpr06893sor.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_9parxfpr06893sor.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}

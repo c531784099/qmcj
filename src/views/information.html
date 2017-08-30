@@ -1,0 +1,42 @@
+<div id="user-info" ng-controller="infoController">
+    <div class="user-msg">
+        <div class="container">
+            <div class="media">
+                <a href="#" class="media-left">
+                    <img ng-src="{{userInfo.userImg}}" alt="">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">
+                        {{userInfo.username}}
+                        <small>下午好</small>
+                    </h4>
+                    <div class="safe-lv">
+                        <span>帐户安全等级</span>
+                        <p><span style="width:{{userInfo.safe*33.3}}%"></span></p>
+                        <span>{{safeLv[userInfo.safe-1]}}</span>
+                    </div>
+                    <div class="last-login-time">
+                        <span>上次登陆时间</span>
+                        <span>{{userInfo.lastTime}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="user-information">
+        <div class="container">
+            <div class="row">
+                <ul class="left col-sm-2">
+                    <li ui-sref="information.mainPage" ng-class="{usercurrent:infoCur==0}" ng-click="infoTrans(0)">个人主页</li>
+                    <li ui-sref="information.psMsg" ng-class="{usercurrent:infoCur==1}" ng-click="infoTrans(1)">个人信息</li>
+                    <li ui-sref="information.safeSetting" ng-class="{usercurrent:infoCur==2}" ng-click="infoTrans(2)">安全设置</li>
+                    <li>关注的圈子</li>
+                    <li ui-sref="information.purchaseRecord" ng-class="{usercurrent:infoCur==3}" ng-click="infoTrans(3)">购买记录</li>
+                </ul>
+                <div class="right col-sm-9 col-sm-push-1" ng-controller="userController">
+                    <div ui-view="userInfo"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

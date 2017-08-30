@@ -1,0 +1,24 @@
+/**
+ * Created by Administrator on 2017/8/7 0007.
+ */
+angular.module("myApp")
+.controller("loginController",["httpServer","$scope","$state","$rootScope",'urls',function(httpServer,$scope,$state,$rootScope,urls){
+    $scope.phone="13014509731";
+    $scope.psd="5769457986";
+    $scope.login=function(){
+        httpServer.useHttp(urls.loginUrl,"post",{
+            phone:$scope.phone,
+            password:$scope.psd
+        },function(res){
+            window.alert(res.data.resultMsg);
+            if(res.data.resultCode=="0000"){
+                $rootScope.userMsg={
+                    userLogin:true,
+                    userphone:$scope.phone,
+                    userpsd:$scope.psd
+                };
+                $state.go("/")
+            }
+        });
+    }
+}]);

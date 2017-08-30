@@ -1,0 +1,95 @@
+<div id="index" ng-controller="indexController">
+    <div id="banner">
+        <div class="carousel slide banner" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target=".banner" data-slide-to="0" class="active"></li>
+                <li data-target=".banner" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item" ng-repeat="x in banner" ng-class="{active:$index==bannerCur}">
+                    <a href="#"><img ng-src="{{x.img}}" alt=""> </a>
+                </div>
+
+            </div>
+            <a class="left carousel-control" href=".banner" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"> </span>
+            </a>
+            <a class="right carousel-control" href=".banner" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"> </span>
+            </a>
+        </div>
+    </div>
+    <div id="hot-project">
+        <div class="container">
+            <div class="row">
+                <ul class="col-sm-2 right">
+                    <li ng-repeat="(x,y) in type" ng-click="change(x)" ng-class="{current:$index==typeCur       }">{{y}}</li>
+                </ul>
+                <div class="col-sm-10 left">
+                    <h2>热门项目<a ui-sref="list">查看更多</a></h2>
+                    <div class="media">
+                        <div class="media-left">
+                            <img ng-src="{{hotProject[typeCur].img}}" alt="">
+                        </div>
+                        <div class="media-body">
+                            <h4><a href="#">{{hotProject[typeCur].name}}</a>
+                                <small>by {{hotProject[typeCur].fname}}</small>
+                            </h4>
+                            <p class="desc">{{hotProject[typeCur].desc}}</p>
+                            <div class="hot-label">
+                                <span><i class="glyphicon glyphicon-tag"></i>{{type[hotProject[typeCur].cid]}}</span>
+                                <span><i class="glyphicon glyphicon-sd-video"></i>卫视推荐</span>
+                            </div>
+                            <div class="all-progress">
+                                <div class="part-progress" style="width:{{hotProject[typeCur].sp}}%"></div>
+                            </div>
+                            <div class="rest-mes">
+                                <span class="process">{{hotProject[typeCur].sp}}<i>进度</i></span>
+                                <span class="sup-money">{{"￥"+hotProject[typeCur].rprice}}<i>支持金额</i></span>
+                                <span class="sup-num">{{hotProject[typeCur].rnum}}<i>支持人数</i></span>
+                                <span class="rest-days">{{hotProject[typeCur].rday}}<i>剩余天数</i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <div id="new" class="container">
+        <h4>卫视主推<a ui-sref="list">查看更多</a></h4>
+        <div class="row">
+            <div class="col-sm-4 command" ng-repeat="x in new">
+                <img ng-src="{{x.img}}" alt="">
+                <h5><a href="#">{{x.name}}</a>
+                    <small>by {{x.fname}}</small>
+                </h5>
+                <p class="desc">{{x.desc}}</p>
+                <p class="tag">
+                    <span class="glyphicon glyphicon-tag"></span>
+                    {{type[x.cid]}}
+                </p>
+                <div class="all-process">
+                    <div class="part-process" style="width:{{x.sp}}%"></div>
+                </div>
+                <p class="rest-mes">
+                    <span>{{x.sp}}<i>进度</i></span>
+                    <span>￥{{x.rprice}}<i>支持金额</i></span>
+                    <span>{{x.rday}}<i>剩余天数</i></span>
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <div id="cooperation" class="container">
+        <h4>合作单位</h4>
+        <ul>
+            <li ng-repeat="x in unit">
+                <img ng-src="{{x.img}}" alt="">
+            </li>
+        </ul>
+    </div>
+</div>

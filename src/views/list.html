@@ -1,0 +1,50 @@
+<div id="list" ng-controller="listController">
+    <div class="list-container">
+        <div class="type-list container">
+            <ul>
+                <li ng-repeat="(x,y) in allType1" ng-class="{current:$index==cid}" ng-click="changeCid($index)">{{y}}</li>
+            </ul>
+            <ul>
+                <li ng-repeat="(x,y) in allType2" ng-class="{current:$index==status}" ng-click="changeStatus($index)">{{y}}</li>
+            </ul>
+            <ul>
+                <li ng-repeat="(x,y) in allType3" ng-class="{current:$index==timeStatus}" ng-click="changeTimeStatus($index)">{{y}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="project-container">
+        <div class="container">
+            <ul class="row">
+                <li class="col-sm-4 command" ng-repeat="x in hots">
+
+                    <div class="content">
+                    <img ng-src="{{x.img}}" alt="">
+                        <div class="describe">
+                    <h5><a href="#">{{x.name}}</a>
+                        <small>by {{x.fname}}</small>
+                    </h5>
+                    <p class="desc">{{x.desc}}</p>
+                    <p class="tag">
+                        <span class="glyphicon glyphicon-tag"></span>
+                        {{allType1[x.cid]}}
+                    </p>
+                    <div class="all-process">
+                        <div class="part-process" style="width:{{x.sp}}%"></div>
+                    </div>
+                    <p class="rest-mes">
+                        <span>{{x.sp}}<i>进度</i></span>
+                        <span>￥{{x.rprice}}<i>支持金额</i></span>
+                        <span>{{x.rday}}<i>剩余天数</i></span>
+                    </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <ul class="pagination text-center">
+        <li><a  ng-click="prev()" href="javascript:void()">&laquo;</a></li>
+        <li ng-repeat="x in pageArr" ng-class="{active:x==page,notclick:x=='...'||x=='....'}" ng-click="changePage(x)"><a >{{x}}</a></li>
+        <li><a  ng-click="next()">&raquo;</a></li>
+    </ul>
+</div>

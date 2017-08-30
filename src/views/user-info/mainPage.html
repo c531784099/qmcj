@@ -1,0 +1,52 @@
+<div id="main-page">
+    <div class="focus-pro">
+        <h3>
+            <span>我关注的项目</span>
+        </h3>
+        <ul>
+            <li class="col-sm-6" ng-repeat="x in procare">
+                <div class="media">
+                    <a href="#" class="media-left">
+                    <img ng-src="{{x.img}}" alt="">
+                    </a>
+                    <div class="media-body">
+                        <h4>{{x.name}}<br>
+                            <small>by {{x.fname}}</small>
+                        </h4>
+                        <p class="process">
+                            <span style="width:{{x.sp}}%"></span>
+                        </p>
+                        <p class="raise">
+                            <span>已筹资</span>￥{{x.rprice}}
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="cur-hot">
+        <h3>
+            <span>当前热门</span>
+        </h3>
+        <ul>
+            <li class="col-sm-4 command" ng-repeat="x in prohot">
+                <div class="content">
+                    <img ng-src="{{x.img}}" alt="">
+                    <div class="describe">
+                        <h5><a href="#">{{x.name}}</a>
+                        </h5>
+                        <p class="desc">{{x.desc}}</p>
+                        <div class="all-process">
+                            <div class="part-process" style="width:{{x.sp}}%"></div>
+                        </div>
+                        <p class="rest-mes">
+                            <span>{{x.sp}}<i>进度</i></span>
+                            <span>￥{{x.rprice}}<i>支持金额</i></span>
+                            <span>{{x.rday}}<i>剩余天数</i></span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

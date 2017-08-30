@@ -1,0 +1,92 @@
+<div id="safe-setting">
+    <ul class="setting">
+        <li ng-class="{current:settingCur==1}" ng-click="settingTransform(1)">修改密码</li>
+        <li ng-class="{current:settingCur==2}" ng-click="settingTransform(2)">实名认证</li>
+        <li ng-class="{current:settingCur==3}" ng-click="settingTransform(3)">邮箱认证</li>
+    </ul>
+    <ul class="setting-content">
+        <li class="change-psd" ng-show="settingCur==1">
+            <form method="post" name="psdForm" novalidate>
+                <div class="form-group">
+                    <label class="label-control col-xs-3 col-sm-2">当前密码</label>
+                    <div class="col-xs-9 col-sm-4">
+                    <input type="password" class="form-control">
+                    </div>
+                    <p ng-show="false" class="tips">
+                        <span>当前密码不能为空</span>
+                        <span>输入的密码格式不正确</span>
+                    </p>
+                </div>
+                <div class="form-group">
+                    <label class="label-control col-xs-3 col-sm-2">新密码</label>
+                    <div class="col-xs-9 col-sm-4">
+                        <input type="password" class="form-control" placeholder="密码不能少于6位">
+                    </div>
+                    <p ng-show="false" class="tips">
+                        <span>密码格式不正确</span>
+                    </p>
+                </div>
+                <div class="form-group">
+                    <label class="label-control col-xs-3 col-sm-2">已绑定手机</label>
+                    <div class="col-xs-9 col-md-4">
+                        {{bindPhone}}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="label-control col-xs-3 col-sm-2">验证码</label>
+                    <div class="col-sm-2 col-xs-4">
+                        <input type="text" class="form-control" placeholder="输入验证码">
+                    </div>
+                    <div class="col-xs-3 check-code col-sm-2">
+                        免费获取验证码
+                    </div>
+                    <p ng-show="false" class="tips">验证码不正确</p>
+                </div>
+            </form>
+        </li>
+        <li class="real-name" ng-show="settingCur==2">
+            <form method="post">
+                <div class="form-group">
+                    <label class="label-control col-xs-3 col-sm-2">姓名</label>
+                    <div class=" col-xs-9 col-sm-4">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="label-control col-xs-3 col-sm-2">身份证号</label>
+                    <div class=" col-xs-9 col-sm-4">
+                        <input type="text" class="form-control">
+
+                    </div>
+                    <p class="tips" ng-show="false">
+                        <span>请输入正确的身份证号</span>
+                    </p>
+                </div>
+            </form>
+        </li>
+        <li class="check-email" ng-show="settingCur==3">
+            <form method="post">
+                <div class="form-group">
+                    <label class="label-control col-xs-3 col-sm-2">邮箱地址</label>
+                    <div class=" col-xs-9 col-sm-4">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="label-control col-xs-3 col-sm-2">验证码</label>
+                    <div class=" col-xs-4 col-sm-2">
+                        <input type="text" class="form-control">
+
+                    </div>
+                    <div class="col-xs-3 check-code col-md-2">
+                        免费获取验证码
+                    </div>
+                    <p class="tips" ng-show="false">
+                        <span>请输入正确的验证码</span>
+                    </p>
+                </div>
+            </form>
+        </li>
+    </ul>
+    <button class="btn btn-success">保存</button>
+</div>

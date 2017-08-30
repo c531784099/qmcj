@@ -1,0 +1,1590 @@
+body {
+    background: #f8f9fb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background: #fff;
+    margin-bottom: 0;
+}
+
+.navbar-toggle {
+    cursor: pointer;
+}
+
+#header .navbar-brand {
+    margin-top: 10px;
+}
+
+#header #mynav {
+    padding: 0;
+    margin-top: 10px;
+    border-top: 0 none;
+}
+
+#header #mynav ul li a {
+    padding: 10px;
+    color: #828282;
+    font-size: 16px;
+}
+
+#header #mynav ul li:last-child {
+    text-align: center;
+}
+
+#header #mynav ul li:last-child a {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+#header #mynav ul li:last-child .logined a {
+    /*font-size: 12px;*/
+    /*padding:20px 5px;*/
+}
+
+#header #mynav ul li:last-child a:hover {
+    background: #fff;
+}
+
+#header #mynav ul li.search-box {
+    height: 36px;
+    position: relative;
+    padding: 0 10px;
+}
+
+#header #mynav ul li.search-box span {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #828282;
+}
+
+#header #mynav ul li.search-box input {
+    height: 100%;
+    width: 50%;
+    padding: 0 40px;
+    font-size: 14px;
+    color: #828282;
+    outline: none;
+}
+
+footer {
+    /*height:124px;*/
+    background: #000;
+    padding-bottom: 20px;
+}
+
+footer ul {
+    width: 100%;
+    height: 100px;
+    list-style: none;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline;
+    line-height: 100px;
+    padding-right: 5px;
+    border-right: 1px solid #828587;
+}
+
+footer ul li:last-child {
+    border-right: 0 none;
+}
+
+footer ul li a {
+    color: #828587;
+}
+
+footer ul li a:hover {
+    text-decoration: none;
+    color: #ff4200
+}
+
+footer .footer-logo {
+    width: 100%;
+    text-align: center;
+}
+
+/*****注册页面*****/
+#register, #login {
+    padding: 64px 0;
+}
+
+#register .register {
+    border: 1px solid #dbdcde;
+    border-radius: 5px;
+    margin: 0 auto;
+    background: #fff;
+    min-width: 387px;
+}
+
+#register .register form h3 {
+    line-height: 50px;
+}
+
+#register .register form .form-group {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#register .register form .form-group .form-control {
+    height: 40px;
+}
+
+#register .register form .form-group .tips {
+    line-height: 20px;
+    color: #fa0203;
+    font-size: 12px;
+    padding-left: 10px;
+    clear: both;
+}
+
+#register .register form .form-group .col-xs-7 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#register .register form .form-group .col-xs-4 {
+    padding: 0
+}
+
+#register .register form .form-group label {
+    border: 1px solid #cccccc;
+    line-height: 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #828483;
+    font-weight: 500;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+#register .register .btn {
+    height: 40px;
+    font-size: 16px;
+}
+
+#register .register form .checkbox {
+    color: #838383;
+}
+
+#register .register hr.login-method-hr {
+    border-top-color: #dad9de;
+    margin: 40px 0 0 0;
+}
+
+#register .register .login-method {
+    position: relative;
+    text-align: center;
+}
+
+#register .register .login-method h5 {
+    position: absolute;
+    padding: 10px;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    background: #fff;
+}
+
+#register .register .login-method a {
+    font-size: 22px;
+    border-radius: 50%;
+    margin: 30px 2px 10px 2px;
+    line-height: 40px;
+    width: 40px;
+}
+
+#register .register .login-method a:hover {
+    text-decoration: none;
+}
+
+#register .register .login-method a:nth-child(2) {
+    color: #01ba07;
+    border: 1px solid #9ce29a;
+
+}
+
+#register .register .login-method a:nth-child(3) {
+    color: #4d94d2;
+    border: 1px solid #b5d1e9;
+}
+
+#register .register .login-method a:nth-child(4) {
+    color: #d22b18;
+    border: 1px solid #f4ada9;
+}
+
+#register .register > h6 {
+    text-align: center;
+    line-height: 55px;
+    border-top: 1px solid #dddce1;
+    margin-bottom: 0;
+    color: #818181
+}
+
+/*****登录页面*****/
+#login .login {
+    border: 1px solid #dbdcde;
+    border-radius: 5px;
+    margin: 0 auto;
+    background: #fff;
+    min-width: 387px;
+}
+
+#login .login form h3 {
+    line-height: 50px;
+}
+
+#login .login form .form-group {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#login .login form .form-group .form-control {
+    height: 40px;
+}
+
+#login .login form .form-group .tips {
+    line-height: 20px;
+    color: #fa0203;
+    font-size: 12px;
+    padding-left: 10px;
+    clear: both;
+}
+
+#login .login .btn {
+    height: 40px;
+    font-size: 16px;
+}
+
+#login .login form .checkbox {
+    color: #838383;
+}
+
+#login .login hr.login-method-hr {
+    border-top-color: #dad9de;
+    margin: 40px 0 0 0;
+}
+
+#login .login .login-method {
+    position: relative;
+    text-align: center;
+}
+
+#login .login .login-method h5 {
+    position: absolute;
+    padding: 10px;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    background: #fff;
+}
+
+#login .login .login-method a {
+    font-size: 22px;
+    border-radius: 50%;
+    margin: 30px 2px 10px 2px;
+    line-height: 40px;
+    width: 40px;
+}
+
+#login .login .login-method a:hover {
+    text-decoration: none;
+}
+
+#login .login .login-method a:nth-child(2) {
+    color: #01ba07;
+    border: 1px solid #9ce29a;
+
+}
+
+#login .login .login-method a:nth-child(3) {
+    color: #4d94d2;
+    border: 1px solid #b5d1e9;
+}
+
+#login .login .login-method a:nth-child(4) {
+    color: #d22b18;
+    border: 1px solid #f4ada9;
+}
+
+#login .login > h6 {
+    text-align: center;
+    line-height: 55px;
+    border-top: 1px solid #dddce1;
+    margin-bottom: 0;
+    color: #818181
+}
+
+/*****首页页面*****/
+/*banner*/
+#index #banner .carousel-inner img {
+    width: 100%;
+}
+
+#index #banner .carousel-indicators li {
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+}
+
+/*hot project*/
+#index #hot-project {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+#index #hot-project .left {
+    overflow: hidden;
+}
+
+#index #hot-project .left h2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+#index #hot-project .left h2 a {
+    font-size: 14px;
+    font-weight: 400;
+    float: right;
+}
+
+#index #hot-project .left .media {
+    width: 100%;
+}
+
+#index #hot-project .left .media-left {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    float: none;
+}
+
+#index #hot-project .left .media-left img {
+    width: 100%;
+}
+
+#index #hot-project .left .media-body {
+    display: block;
+    width: 100%;
+}
+
+#index #hot-project .left .media-body h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#index #hot-project .left .media-body h4 a {
+    font-size: 18px;
+    color: #150b0c;
+    font-weight: 600;
+}
+
+#index #hot-project .left .media-body h4 a:hover {
+    text-decoration: none;
+}
+
+#index #hot-project .left .media-body h4 small {
+    display: block;
+    line-height: 35px;
+    color: #7f8384;
+}
+
+#index #hot-project .left .media-body .desc {
+    color: #838788;
+    line-height: 20px;
+    height: 60px;
+}
+
+#index #hot-project .left .media-body .hot-label {
+    margin-top: 30px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#index #hot-project .left .media-body .hot-label span {
+    float: left;
+    margin-right: 30px;
+    color: #818586;
+}
+
+#index #hot-project .left .media-body .hot-label span i {
+    float: left;
+    margin-right: 5px;
+}
+
+#index #hot-project .left .media-body .all-progress {
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    background: #dad9df;
+    margin-top: 15px;
+}
+
+#index #hot-project .left .media-body .all-progress .part-progress {
+    height: 100%;
+    border-radius: 4px;
+    background: #fe4300;
+}
+
+#index #hot-project .left .media-body .rest-mes {
+    margin-top: 20px;
+}
+
+#index #hot-project .left .media-body .rest-mes span {
+    float: left;
+    margin-right: 30px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#index #hot-project .left .media-body .rest-mes span i {
+    display: block;
+    font-weight: 400;
+    color: #848587;
+    font-size: 14px;
+    font-style: normal;
+}
+
+#index #hot-project .right {
+    list-style: none;
+    overflow: hidden;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+
+#index #hot-project .right li {
+    float: left;
+    color: #150b0c;
+    width: 33.333%;
+    text-align: left;
+    cursor: pointer;
+    padding-left: 10px;
+    line-height: 30px;
+}
+
+#index #hot-project .right li:hover {
+    color: #fe4300;
+    box-shadow: -2px 0 0 0 red
+}
+
+/*new*/
+#new {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#new h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #160c0a
+}
+
+#new h4 a {
+    float: right;
+    color: #a4a6a5;
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid #a4a6a5;
+    font-weight: 400;
+    border-radius: 2px;
+}
+
+#new h4 a:hover {
+    text-decoration: none;
+}
+
+#new .row {
+    margin-top: 30px;
+}
+
+#new .row .command {
+    color: #848484;
+    margin-top: 20px;
+}
+
+#new .row .command img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#new .row .command h5 {
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+#new .row .command h5 small {
+    display: block;
+    line-height: 30px;
+}
+
+#new .row .command .desc {
+    width: 100%;
+    line-height: 20px;
+    height: 60px;
+    overflow: hidden;
+}
+
+#new .row .command .tag {
+    margin: 20px 0 10px 0;
+}
+
+#new .row .command .tag span {
+    margin-right: 5px;
+}
+
+#new .row .command .all-process {
+    width: 100%;
+    height: 6px;
+    background: #d9d8de;
+    border-radius: 3px;
+}
+
+#new .row .command .part-process {
+    height: 100%;
+    border-radius: 3px;
+    background: #fe4300;
+}
+
+#new .row .command .rest-mes {
+    width: 100%;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+#new .row .command .rest-mes span {
+    float: left;
+    margin-right: 30px;
+    font-size: 18px;
+    color: #100f0d;
+    font-weight: 600;
+}
+
+#new .row .command .rest-mes span i {
+    display: block;
+    font-style: normal;
+    font-size: 14px;
+    color: #848484;
+    font-weight: 300;
+}
+
+/*合作单位*/
+#cooperation {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#cooperation h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #160c0a
+}
+
+#cooperation ul {
+    margin-top: 30px;
+    overflow: hidden;
+    list-style: none;
+}
+
+#cooperation ul li {
+    float: left;
+    margin-top: 20px;
+    width: 50%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+
+#cooperation ul li img {
+    width: 100%;
+}
+
+/*****列表页*****/
+#list {
+    overflow: hidden;
+}
+
+#list ul {
+    list-style: none;
+}
+
+#list .list-container {
+    width: 100%;
+    padding: 30px 0;
+    background: #f8faf9;
+    border-bottom: 1px solid #d9dadc;
+}
+
+#list .type-list {
+    overflow: hidden;
+}
+
+#list .type-list ul {
+    padding: 10px 0;
+    list-style: none;
+    width: 100%;
+    overflow: hidden;
+}
+
+#list .type-list ul li {
+    float: left;
+    padding: 5px 8px;
+    color: #4f5150;
+    margin-right: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#list .type-list ul li.current {
+    background: #ff4002;
+    color: #fff;
+}
+
+#list .command {
+    margin-bottom: 55px;
+}
+
+#list .command.ng-enter {
+    opacity: 0;
+    transition: all 2s;
+}
+
+#list .command.ng-enter-active {
+    opacity: 1;
+}
+
+.project-container .row {
+    margin-top: 55px;
+}
+
+.project-container .row .command {
+    color: #848484;
+}
+
+.project-container .row .command img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project-container .row .command h5 {
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.project-container .row .command h5 small {
+    display: block;
+    line-height: 30px;
+}
+
+.project-container .row .command .desc {
+    width: 100%;
+    line-height: 20px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.project-container .row .command .tag {
+    margin-top: 20px;
+}
+
+.project-container .row .command .tag span {
+    margin-right: 5px;
+}
+
+.project-container .row .command .all-process {
+    width: 100%;
+    height: 6px;
+    margin-top:10px;
+    background: #d9d8de;
+    border-radius: 3px;
+}
+
+.project-container .row .command .part-process {
+    height: 100%;
+    border-radius: 3px;
+    background: #fe4300;
+}
+
+.project-container .row .command .rest-mes {
+    width: 100%;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.project-container .row .command .rest-mes span {
+    float: left;
+    margin-right: 30px;
+    font-size: 18px;
+    color: #100f0d;
+    font-weight: 600;
+}
+
+.project-container .row .command .rest-mes span i {
+    display: block;
+    font-style: normal;
+    font-size: 14px;
+    color: #848484;
+    font-weight: 300;
+}
+
+#list .content {
+    width: 100%;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding-bottom:10px;
+
+}
+
+#list .content .describe {
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.pagination li {
+    display: inline-block;
+    cursor: pointer;
+}
+.pagination .notclick{
+    cursor:default;
+}
+ .pagination .notclick a{
+    pointer-events: none;
+}
+ .pagination{
+    text-align: center;
+    width: 100%;
+}
+/*****用户信息界面*****/
+#user-info {
+    width: 100%;
+}
+
+#user-info .user-msg {
+    width: 100%;
+    background: #effafe;
+    padding: 36px 0;
+    border-bottom: 1px solid #d9dade;
+}
+
+#user-info .user-msg .media {
+    width: 100%;
+}
+
+#user-info .user-msg .media .media-left {
+    width: 135px;
+    /*float:left;*/
+    height: 135px;
+    border-radius: 50%;
+    /*margin-left:50px;*/
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+}
+
+#user-info .user-msg .media .media-left img {
+    width: 100%;
+    height: 100%;
+}
+
+#user-info .user-msg .media .media-body {
+    /*margin-left:50px;*/
+    /*float:left;*/
+    width: 100%;
+    display: block;
+    color: #7d8588;
+}
+
+#user-info .user-msg .media .media-body .media-heading {
+    line-height: 60px;
+    /*width:100%;*/
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    color: #190a07;
+    font-weight: 600;
+    border-bottom: 1px solid #dad9e1
+}
+
+#user-info .user-msg .media .media-body .safe-lv {
+    width: 100%;
+    margin-top: 10px;
+    overflow: hidden;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+#user-info .user-msg .media .media-body .safe-lv > span {
+    float: left;
+}
+
+#user-info .user-msg .media .media-body .safe-lv p {
+    background: #d9d8de;
+    float: left;
+    height: 8px;
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#user-info .user-msg .media .media-body .safe-lv > span:last-child {
+    margin-left: 15px;
+}
+
+#user-info .user-msg .media .media-body .safe-lv p > span {
+    height: 100%;
+    width: 66.66%;
+    background: #fe8b16;
+    float: left;
+}
+
+#user-info .user-msg .media .media-body .last-login-time {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#user-info .user-msg .media .media-body .last-login-time span {
+    margin-right: 10px;
+}
+
+#user-info .user-information {
+    width: 100%;
+    background: #f5f4f2;
+    overflow: hidden;
+}
+
+#user-info .user-information .container {
+    margin-top: 13px;
+}
+
+#user-info .user-information .container .left {
+    list-style: none;
+    height: 100%;
+    padding: 26px 0;
+    box-sizing: border-box;
+    background: #fff;
+    overflow: hidden;
+}
+
+#user-info .user-information .container .left li {
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+#user-info .user-information .container .left li:hover {
+    background: #dbd3f8;
+    color: #705cbe;
+}
+
+#user-info .user-information .container .left li.usercurrent {
+    background: #dbd3f8;
+    color: #705cbe;
+}
+
+#user-info .user-information .container .right {
+    background: #fff;
+}
+
+/*个人信息部分*/
+#user-info .user-information .container .right #personal-page {
+    width: 100%;
+    padding: 30px;
+}
+
+#user-info .user-information .container .right #personal-page .chooseImg {
+    height: 70px;
+    line-height: 70px;
+}
+
+#user-info .user-information .container .right #personal-page > div {
+    margin-bottom: 35px;
+}
+
+#user-info .user-information .container .right #personal-page > div .checkbox {
+    margin: 0;
+}
+
+#user-info .user-information .container .right #personal-page > div .radio {
+    margin: 0;
+}
+
+#user-info .user-information .container .right #personal-page > div > span {
+    float: left;
+    display: block;
+    margin-right: 25px;
+}
+
+#user-info .user-information .container .right #personal-page .chooseImg input {
+    width: 70px;
+    height: 70px;
+}
+
+#user-info .user-information .container .right #personal-page .interest {
+    overflow: hidden;
+}
+
+#user-info .user-information .container .right #personal-page .interest > div {
+    float: left;
+    padding: 0
+}
+
+#user-info .user-information .container .right #personal-page .interest .checkbox {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    width: 70px;
+}
+
+#user-info .user-information .container .right #personal-page > .btn {
+    display: block;
+    padding: 5px 30px;
+    margin-top: 20px;
+}
+
+/*修改密码*/
+#safe-setting {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 26px 0 50px 40px;
+    height:450px;
+}
+#safe-setting .setting {
+    width: 100%;
+    line-height: 40px;
+    overflow: hidden;
+    border-bottom: 1px solid #dadadc;
+}
+
+#safe-setting .setting li {
+    float: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: #848484;
+    margin-right: 14px;
+    cursor: pointer;
+    padding: 0 6px;
+    border-bottom: 4px solid transparent;
+}
+
+#safe-setting .setting li.current {
+    border-bottom: 4px solid #43aefc;
+    color: #160c0b;
+}
+
+#safe-setting .setting-content li {
+    margin-top: 50px;
+}
+
+#safe-setting .setting-content li .form-group {
+    display: block;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 34px;
+}
+
+#safe-setting .setting-content li .label-control {
+    padding: 0;
+    text-align: right;
+    color: #140a0b;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#safe-setting .setting-content li .form-group .check-code {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+#safe-setting .setting-content li .form-group .check-code:hover {
+    text-decoration: underline;
+}
+
+#safe-setting .setting-content li .form-group .tips {
+    color: #ff0006;
+}
+
+#safe-setting .btn {
+    padding: 5px 40px;
+    display: block;
+    margin-left: 19%;
+    margin-top: 30px;
+}
+
+/*购买记录*/
+#purchase-record {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 26px 0 50px 40px;
+}
+
+#purchase-record .states {
+    width: 100%;
+    line-height: 40px;
+    overflow: hidden;
+    border-bottom: 1px solid #dadadc;
+}
+
+#purchase-record .states li {
+    float: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: #848484;
+    margin-right: 14px;
+    cursor: pointer;
+    padding: 0 6px;
+    border-bottom: 4px solid transparent;
+}
+
+#purchase-record .states li.purchaseCur {
+    border-bottom: 4px solid #43aefc;
+    color: #160c0b;
+}
+
+#purchase-record > .row {
+    display: none;
+}
+
+#purchase-record .records li {
+    padding: 12px 0;
+    border-bottom: 1px solid #e1e1e3;
+    overflow: hidden;
+}
+
+#purchase-record .records li .proimg {
+    padding: 0;
+}
+
+#purchase-record .records li .proimg > a {
+    float: left;
+    width: 158px;
+    height: 96px;
+    background: yellow;
+}
+
+#purchase-record .records li .proimg > a img {
+    width: 100%;
+    height: 100%;
+}
+
+#purchase-record .records li .title {
+    color: #130a0b;
+    float: left;
+    margin-left: 20px;
+    display: none;
+    width:50%;
+}
+
+#purchase-record .records li .title h4 {
+    font-weight: 600;
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+
+#purchase-record .records li .title small {
+    margin-left: 10px;
+    margin-top: 10px;
+    display: block;
+}
+
+#purchase-record .records li .title span {
+    display: block;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#purchase-record .records li .money {
+    display: none;
+}
+
+#purchase-record .records li .business-status {
+    display: none;
+}
+
+#purchase-record .records li .operation {
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+#purchase-record .records li .operation span {
+    display: block;
+    text-align: center;
+    color: #40aeff;
+    cursor: pointer;
+}
+
+#purchase-record .records li .operation span:hover {
+    text-decoration: underline;
+}
+
+/*个人主页*/
+#main-page {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 26px 0 50px 40px;
+}
+
+#main-page .focus-pro {
+    width: 100%;
+}
+
+#main-page .focus-pro h3 {
+    width: 100%;
+    padding: 7px 0;
+    font-size: 14px;
+    font-weight: 600;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dadadc;
+
+}
+
+#main-page .focus-pro h3 span {
+    line-height: 25px;
+    display: block;
+    padding-left: 10px;
+    border-left: 4px solid #43aefc;
+}
+
+#main-page .focus-pro ul{
+    overflow:hidden;
+    padding:22px 0;
+}
+#main-page .focus-pro ul li {
+    padding-left: 0;
+    margin:12px 0;
+}
+
+#main-page .focus-pro ul li .media {
+    width: 100%;
+    border: 1px solid #d5d5d7;
+    height:110px;
+
+}
+
+#main-page .focus-pro ul li .media .media-left {
+    width: 144px;
+    float: left;
+    height:100%;
+}
+#main-page .focus-pro ul li .media .media-left img{
+    width:100%;
+    height:100%;
+}
+#main-page .focus-pro ul li .media .media-body {
+    padding: 20px 25px;
+    box-sizing: border-box;
+}
+
+#main-page .focus-pro ul li .media .media-body h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left:-10px;
+}
+
+#main-page .focus-pro ul li .media .media-body h4 small {
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+#main-page .focus-pro ul li .media .media-body .process {
+    width: 100%;
+    height: 6px;
+    margin-top: 10px;
+    border-radius: 3px;
+    background: #d8d9de;
+}
+
+#main-page .focus-pro ul li .media .media-body .process span {
+    height: 100%;
+    width: 30%;
+    display: block;
+    background: #ff1816;
+    border-radius: 3px;
+}
+
+#main-page .focus-pro ul li .media .media-body .raise {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #160a0a;
+}
+
+#main-page .focus-pro ul li .media .media-body .raise span {
+    color: #838383;
+    float: left;
+    margin-right: 10px;
+}
+/*prohot*/
+#main-page .cur-hot{
+    margin-top:30px;
+    margin-bottom:30px;
+    overflow: hidden;
+}
+#main-page .cur-hot h3 {
+    width: 100%;
+    padding: 7px 0;
+    font-size: 14px;
+    font-weight: 600;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dadadc;
+
+}
+#main-page .cur-hot h3 span {
+    line-height: 25px;
+    display: block;
+    padding-left: 10px;
+    border-left: 4px solid #43aefc;
+}
+#main-page .cur-hot ul{
+    margin-top:30px;
+}
+#main-page .cur-hot .command {
+    color: #848484;
+    padding-left:0;
+    margin-bottom:15px;
+}
+
+#main-page .cur-hot .command img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#main-page .cur-hot .command h5 {
+    font-size: 16px;
+    line-height:40px;
+    font-weight: 600;
+}
+#main-page .cur-hot .command h5 a:hover{
+    color:#666;
+}
+#main-page .cur-hot .command .desc {
+    width: 100%;
+    line-height: 20px;
+    height: 60px;
+    font-size:12px;
+    overflow: hidden;
+}
+
+
+
+#main-page .cur-hot .command .all-process {
+    width: 100%;
+    height: 6px;
+    background: #d9d8de;
+    border-radius: 3px;
+    margin-top:14px;
+}
+
+#main-page .cur-hot .command .part-process {
+    height: 100%;
+    border-radius: 3px;
+    background: #fe4300;
+}
+
+#main-page .cur-hot .command .rest-mes {
+    width: 100%;
+    margin-top: 10px;
+    overflow: hidden;
+    font-size:12px;
+}
+
+#main-page .cur-hot .command .rest-mes span {
+    float: left;
+    margin-right:20px;
+    font-size: 16px;
+    color: #100f0d;
+    font-weight: 600;
+}
+
+#main-page .cur-hot .command .rest-mes span i {
+    display: block;
+    font-style: normal;
+    font-size: 14px;
+    color: #848484;
+    font-weight: 300;
+}
+
+#main-page .cur-hot .content {
+    width: 100%;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+#main-page .cur-hot .content .describe {
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+/******************************/
+@media (min-width: 768px) {
+    #header {
+        overflow: hidden;
+        height: 70px;
+    }
+
+    #header #mynav {
+        margin: 0;
+
+    }
+
+    #header #mynav ul li {
+        float: left;
+        padding: 22px 20px;
+        height: 70px;
+        box-sizing: border-box;
+    }
+
+    #header #mynav ul li a {
+        padding: 0;
+    }
+
+    #header #mynav ul li a:hover {
+        background: white;
+        color: #333;
+    }
+
+    #header #mynav ul li.search-box {
+        border-left: 1px solid #d9d9de;
+        padding: 16px 20px;
+        height: 70px;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    #header #mynav ul li.search-box span {
+        position: absolute;
+        left: 35px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #header #mynav ul li.search-box input {
+        height: 36px;
+        width: 200px;
+        font-size: 12px;
+        border: 0 none;
+    }
+
+    #header #mynav ul li:last-child {
+        float: right;
+    }
+
+    #header #mynav ul li:last-child a {
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 14px;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    footer {
+        padding-bottom: 0;
+    }
+
+    footer ul {
+        width: auto;
+        height: 100px;
+        text-align: left;
+    }
+
+    footer .footer-logo {
+        width: auto;
+        text-align: center;
+        line-height: 100px;
+    }
+
+    #index #hot-project .left {
+        margin: 0;
+    }
+
+    #index #hot-project .left .media-left {
+        width: 35%;
+        float: left;
+    }
+
+    #index #hot-project .left .media-body {
+        float: right;
+        width: 60%;
+    }
+
+    #index #hot-project .left .media-body h4 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    #index #hot-project .right {
+        float: left;
+        padding-top: 35px;
+        border-right: 1px solid #d9dadc;
+        padding-right: 2px;
+    }
+
+    #index #hot-project .right li {
+        float: none;
+        color: #150b0c;
+        width: 100%;
+        text-align: center;;
+        cursor: pointer;
+
+    }
+
+    #index #hot-project .right li.current {
+        box-shadow: 2px 0 0 0 red
+    }
+
+    #index #hot-project .right li:hover {
+        box-shadow: 2px 0 0 0 red
+    }
+
+    #cooperation ul li {
+        width: 20%;
+        margin-top: 0;
+    }
+
+    /*#user-info .user-msg .media {*/
+    /*width: 100%;*/
+    /*}*/
+    #user-info .user-msg .media .media-left {
+        width: 135px;
+        float: left;
+        height: 135px;
+        border-radius: 50%;
+        margin-left: 50px;
+        overflow: hidden;
+    }
+
+    #user-info .user-msg .media .media-left img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #user-info .user-msg .media .media-body {
+        margin-left: 50px;
+        float: left;
+        width: 60%;
+    }
+
+    #user-info .user-msg .media .media-body .media-heading {
+
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    #user-info .user-msg .media .media-body .safe-lv {
+        width: 100%;
+        margin-top: 10px;
+        overflow: hidden;
+        line-height: 30px;
+        font-size: 16px;
+    }
+
+    #user-info .user-msg .media .media-body .safe-lv > span {
+        float: left;
+    }
+
+    #user-info .user-msg .media .media-body .safe-lv p {
+        background: #d9d8de;
+        float: left;
+        height: 8px;
+        width: 50%;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+
+    #user-info .user-msg .media .media-body .safe-lv > span:last-child {
+        margin-left: 15px;
+    }
+
+    #user-info .user-msg .media .media-body .safe-lv p > span {
+        height: 100%;
+        width: 66.66%;
+        background: #fe8b16;
+        float: left;
+    }
+
+    #user-info .user-msg .media .media-body .last-login-time {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    #user-info .user-msg .media .media-body .last-login-time span {
+        margin-right: 10px;
+    }
+
+    #purchase-record .records li .title {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    #header {
+        padding: 0 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #header #mynav {
+        margin: 0;
+    }
+
+    #header #mynav ul li {
+        padding: 22px 35px;
+    }
+
+    #header #mynav ul li.search-box input {
+        width: 250px;
+        font-size: 14px;
+    }
+
+    #purchase-record > .row {
+        display: block;
+        line-height: 50px;
+        font-size: 14px;
+        color: #120a08;
+        background: #f5f4f2;
+        margin: 0;
+        border: 1px solid #eeeeee;
+    }
+
+    #purchase-record > .row > div {
+        text-align: center;
+    }
+
+    #purchase-record > .row > div:first-child {
+        text-align: left;
+    }
+
+    #purchase-record .records li .money {
+        display: block;
+        line-height: 40px;
+        font-size: 14px;
+        color: #fa4300;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    #purchase-record .records li .business-status {
+        display: block;
+        line-height: 40px;
+        font-size: 14px;
+        color: #fa4300;
+        font-weight: 600;
+        text-align: center;
+    }
+}

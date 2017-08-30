@@ -1,0 +1,30 @@
+/**
+ * Created by Administrator on 2017/8/7 0007.
+ */
+angular.module("myApp")
+.controller("FormController",["$scope","httpServer",function($scope,httpServer){
+    $scope.name="";
+    $scope.psdRep="";
+    $scope.phone="";
+    $scope.checkCode="";
+    $scope.psd="";
+    $scope.phoneTips="";
+    $scope.psdTips="";
+    $scope.checkbox=true;
+    $scope.reg=function(){
+        httpServer.useHttp(urls.regUrl,"post",{
+            phone:$scope.phone,
+            password:$scope.psd,
+            name:$scope.name,
+            passwordRepeat:$scope.psdRep
+        },function(res){
+            if(res.data.resultCode=="000004"||res.data.resultCode=="000002"){
+                $scope.phoneTips=res.data.resultMsg;
+            }else{
+                window.alert("恭喜你，注册成功！")
+                $scope.phoneTips="";
+                $scope.psdTips="";
+            }
+        });
+    }
+}]);
