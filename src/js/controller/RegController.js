@@ -2,7 +2,7 @@
  * Created by Administrator on 2017/8/7 0007.
  */
 angular.module("myApp")
-.controller("FormController",["$scope","httpServer",function($scope,httpServer){
+.controller("FormController",["$scope","httpServer","$state","urls",function($scope,httpServer,$state,urls){
     $scope.name="";
     $scope.psdRep="";
     $scope.phone="";
@@ -21,7 +21,7 @@ angular.module("myApp")
             if(res.data.resultCode=="000004"||res.data.resultCode=="000002"){
                 $scope.phoneTips=res.data.resultMsg;
             }else{
-                window.alert("恭喜你，注册成功！")
+                window.alert("恭喜你，注册成功！");
                 $scope.phoneTips="";
                 $scope.psdTips="";
             }
